@@ -22,9 +22,7 @@ except ImportError:
 	havesquashfs = False
 
 # handle arguments
-
 handle_sigint()
-
 imgarg   = ''
 runhooks = True
 

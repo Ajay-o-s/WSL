@@ -8,8 +8,8 @@ import time
 import urllib.request
 from utils import Fore, parse_image_arg, chunked_copy, clear_progress, handle_sigint, ensure_ca_load
 
-# handle arguments
 
+# handle arguments
 handle_sigint()
 ensure_ca_load()
 

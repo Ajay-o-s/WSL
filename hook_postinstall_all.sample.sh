@@ -23,9 +23,7 @@ logwrn () { echo -e "\e[93m[!]\e[39m $@"; }
 log ()    { echo -e "\e[92m[*]\e[39m $@"; }
 
 # detect package manager
-
 log "Detecting operating system..."
-
 DEB=$(test -f /usr/bin/dpkg && /usr/bin/dpkg --search /usr/bin/dpkg >> /dev/null 2>&1; test "$?" != "0"; echo "$?")
 RPM=$(test -f /usr/bin/rpm && /usr/bin/rpm -q -f /usr/bin/rpm >> /dev/null 2>&1; test "$?" != "0"; echo "$?")
 PAC=$(test -f /usr/bin/pacman && /usr/bin/pacman -Qo /usr/bin/pacman >> /dev/null 2>&1; test "$?" != "0"; echo "$?")
